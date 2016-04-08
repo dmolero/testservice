@@ -1,0 +1,193 @@
+2016/04/08 14:00:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii,".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii,')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testservice/index.php?r=gii,
+---
+2016/04/08 14:02:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\wamp\www\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 C:\wamp\www\yii\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\wamp\www\yii\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\wamp\www\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/testservice/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=gii/default/index
+---
+2016/04/08 14:06:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testdrive.bill_country' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bill_country`.
+in C:\wamp\www\testservice\index.php (13)
+2016/04/08 14:14:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testdrive.vtiger_bill_country' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `vtiger_bill_country`.
+in C:\wamp\www\testservice\index.php (13)
+2016/04/08 14:52:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TestLeaddetailsController/admin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TestLeaddetails...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testservice/index.php?r=TestLeaddetailsController/admin
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=testLeaddetails/admin
+---
+2016/04/08 14:53:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TestLeaddetailsController/admin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TestLeaddetails...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testservice/index.php?r=TestLeaddetailsController/admin
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=testLeaddetails/admin
+---
+2016/04/08 14:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TestControllerLeadsController/admin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TestControllerL...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testservice/index.php?r=TestControllerLeadsController/admin
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=testLeaddetails/admin
+---
+2016/04/08 14:54:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TestControllerLeadsController/admin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TestControllerL...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testservice/index.php?r=TestControllerLeadsController/admin
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=testLeaddetails/admin
+---
+2016/04/08 14:54:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TestControllerL...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testservice/index.php?r=TestControllerLeads/admin
+---
+2016/04/08 14:54:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TestControllerL...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testservice/index.php?r=TestControllerLeads/admin
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=site/index
+---
+2016/04/08 15:32:05 [error] [exception.CException] exception 'CException' with message 'Property "TestLeaddetails.connection" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('connection')
+#1 C:\wamp\www\testservice\protected\models\TestLeaddetails.php(204): CActiveRecord->__get('connection')
+#2 C:\wamp\www\testservice\protected\controllers\TestControllerLeadsController.php(27): TestLeaddetails->countRegistros()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TestControllerLeadsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('testControllerL...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/testservice/index.php?r=testControllerLeads/index
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=TestControllerLeads/index
+---
+2016/04/08 15:36:56 [error] [exception.CException] exception 'CException' with message 'Property "TestLeaddetails.connection" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('connection')
+#1 C:\wamp\www\testservice\protected\models\TestLeaddetails.php(204): CActiveRecord->__get('connection')
+#2 C:\wamp\www\testservice\protected\controllers\TestControllerLeadsController.php(27): TestLeaddetails->countRegistros()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TestControllerLeadsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('testControllerL...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/testservice/index.php?r=testControllerLeads/index
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=TestControllerLeads/index
+---
+2016/04/08 15:37:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'. The SQL statement executed was: SELECT count(id) as 'count' 
+FROM `test_leaddetails`.
+in C:\wamp\www\testservice\protected\models\TestLeaddetails.php (205)
+in C:\wamp\www\testservice\protected\controllers\TestControllerLeadsController.php (27)
+in C:\wamp\www\testservice\index.php (13)
+2016/04/08 15:37:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'. The SQL statement executed was: SELECT count(id) as 'count' 
+FROM `test_leaddetails`' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\testservice\protected\models\TestLeaddetails.php(205): CDbCommand->queryAll()
+#2 C:\wamp\www\testservice\protected\controllers\TestControllerLeadsController.php(27): TestLeaddetails->countRegistros()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TestControllerLeadsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('testControllerL...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/testservice/index.php?r=testControllerLeads/index
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=TestControllerLeads/index
+---
+2016/04/08 15:42:46 [error] [exception.CException] exception 'CException' with message 'Property "TestLeaddetails.getLeads" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(161): CComponent->__set('getLeads', Array)
+#1 C:\wamp\www\testservice\protected\models\TestLeaddetails.php(210): CActiveRecord->__set('getLeads', Array)
+#2 C:\wamp\www\testservice\protected\controllers\TestControllerLeadsController.php(20): TestLeaddetails->getLeadsPag(0, 2)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): TestControllerLeadsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('testControllerL...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/testservice/index.php?r=testControllerLeads/index
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=TestControllerLeads/index
+---
+2016/04/08 16:19:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testControllerLeads/index".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('testControllerL...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testservice/index.php?r=testControllerLeads/index&page=3
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=testControllerLeads/index&page=2
+---
+2016/04/08 16:19:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testControllerLeads/index".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('testControllerL...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testservice/index.php?r=testControllerLeads/index&page=2
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=testControllerLeads/index
+---
+2016/04/08 16:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testControllerLeads/index".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('testControllerL...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp\www\testservice\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testservice/index.php?r=testControllerLeads/index
+HTTP_REFERER=http://localhost:7070/testservice/index.php?r=TestControllerLeads/index
+---
